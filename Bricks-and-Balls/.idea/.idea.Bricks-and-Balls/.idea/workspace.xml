@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="775fd90f-db13-46d9-b710-ffd4d51004b2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7F859C70-0F9F-483A-9BF9-8DFE22ACEE6E/a6/2dfa6d04/EntityLinkExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/e3/088a0ddd/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Block/BlockComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Ball/BallComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Board/BoardComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/InputComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/BallInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Block/BlockInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Board/BoardInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelData.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/BlockType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/enams/SimpleBlocksType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelsData/Level_1.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelsData/BlockStruct.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/levels/Level_1.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/enams/SimpleBlockType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/BlockStruct.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Ball/BallInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/LevelInitializationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/PositionComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/ViewComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/SpriteComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/MoveComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Common/EndMoveComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/MouseDownComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/LeftMouseComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/LevelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/GameComponentsLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/ResourceComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameSpriteComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/InstansiateViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/InstantiateViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Globals.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/LevelCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/LevelComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/LevelInirializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameLevelComponent.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ky1gUHhbnRLljkpnZbrEWHlhTK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="775fd90f-db13-46d9-b710-ffd4d51004b2" name="Default Changelist" comment="" />
+      <created>1606658134222</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606658134222</updated>
+      <workItem from="1606658142695" duration="269000" />
+      <workItem from="1606658671505" duration="3880000" />
+      <workItem from="1606663165022" duration="15622000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="714" y="394" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1606658409288">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="714" y="394" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606658409288" />
+    <state x="797" y="94" width="640" height="826" key="dock-window-1" timestamp="1606668028765">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="797" y="94" width="640" height="826" key="dock-window-1/0.0.1920.1050@0.0.1920.1050" timestamp="1606668028765" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1606684450259">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606684450259" />
+  </component>
+</project>

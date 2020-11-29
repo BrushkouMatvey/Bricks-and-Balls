@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff28ab473ec4c64882df0c86dd7a04e, type: 3}
+  m_Name: GameSetup
+  m_EditorClassIdentifier: 
+  ball: {fileID: 419869685822058551, guid: afa88ddc57960614a8c80f0f7df0e1c5, type: 3}
+  rectangleSimpleBlock: {fileID: 8320205215510477834, guid: 05a1dbbc1266a7c49a2469bdb05ce432,
+    type: 3}
+  circleSimpleBlock: {fileID: 2470835438593189266, guid: be6ff068286f3ae47979a1d566b71559,
+    type: 3}
+  rhombusSimpleBlock: {fileID: 1904658498011601557, guid: 5088f212119410149a6d2cdf6cb5f208,
+    type: 3}
+  triangleSimpleBlock: {fileID: 1882789913520810400, guid: 2a8f30a8289befb45a1618d70ae44e86,
+    type: 3}
+  laserBlock: {fileID: 8565597947036967145, guid: ebbe8b9eb10a8c047ac1350309ab3f35,
+    type: 3}
+  bombBlock: {fileID: 4934270582998330204, guid: c2f4f395767cfb8409154b3fa24c37e9,
+    type: 3}

@@ -8,15 +8,42 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
+    public const int Ball = 0;
+    public const int Block = 1;
+    public const int Board = 2;
+    public const int EndMove = 3;
+    public const int Globals = 4;
+    public const int Level = 5;
+    public const int Move = 6;
+    public const int Position = 7;
+    public const int Resource = 8;
+    public const int View = 9;
 
-
-    public const int TotalComponents = 0;
+    public const int TotalComponents = 10;
 
     public static readonly string[] componentNames = {
-
+        "Ball",
+        "Block",
+        "Board",
+        "EndMove",
+        "Globals",
+        "Level",
+        "Move",
+        "Position",
+        "Resource",
+        "View"
     };
 
     public static readonly System.Type[] componentTypes = {
-
+        typeof(BallComponent),
+        typeof(BlockComponent),
+        typeof(BoardComponent),
+        typeof(EndMoveComponent),
+        typeof(GlobalsComponent),
+        typeof(LevelComponent),
+        typeof(MoveComponent),
+        typeof(PositionComponent),
+        typeof(ResourceComponent),
+        typeof(ViewComponent)
     };
 }

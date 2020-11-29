@@ -1,0 +1,36 @@
+﻿{
+  "LevelName" : "Level 1",
+  "VisibleAreaSize" : [8, 5],
+  "NumOfBalls": 40,
+  "Blocks": [
+    {
+      "Type": "SimpleBlock",
+      "SimpleBlockType": "Rectangle",
+      "Height" : 1,
+      "Width" : 2,
+      "X" : 2,
+      "Y" : 3,
+      "Health" : 33
+    },
+    {
+      "Type": "LaserBlock",
+      "Damage" : 3,
+      "LaserLength" : 3,
+      "Angles" : [90, 45, 45],
+      "X" : 2,
+      "Y" : 3,
+      "Health" : 9
+    },
+    {
+      "Type": "BombBlock",
+      "Damage" : 5,
+      "DamageAreaSize" : 3,
+      "Height" : 1,
+      "Width" : 1,
+      "X" : 2,
+      "Y" : 2,
+      "Health" : 2
+    }
+  ]
+}
+
