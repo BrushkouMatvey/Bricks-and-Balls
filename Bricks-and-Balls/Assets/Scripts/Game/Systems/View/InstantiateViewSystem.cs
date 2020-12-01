@@ -24,6 +24,9 @@ public class InstantiateViewSystem : ReactiveSystem<GameEntity> {
 			var gameObject = Object.Instantiate(e.resource.prefab);
 			e.AddView(gameObject);
 			gameObject.Link(e);
+			
+			if(e.hasPosition)
+				gameObject.transform.position = e.position.value;
 		}
 	}
 }

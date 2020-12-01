@@ -1,7 +1,7 @@
 ﻿using Entitas.CodeGeneration.Attributes;
 using UnityEngine;
 
-[Game, CreateAssetMenu, Unique]
+[Game, Input, CreateAssetMenu, Unique]
 public class Globals : ScriptableObject
 {
     public GameObject ball;

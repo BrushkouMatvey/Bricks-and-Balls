@@ -10,40 +10,58 @@ public static class GameComponentsLookup {
 
     public const int Ball = 0;
     public const int Block = 1;
-    public const int Board = 2;
-    public const int EndMove = 3;
-    public const int Globals = 4;
-    public const int Level = 5;
-    public const int Move = 6;
-    public const int Position = 7;
-    public const int Resource = 8;
-    public const int View = 9;
+    public const int BorderOffset = 2;
+    public const int BorderSize = 3;
+    public const int BottomBorder = 4;
+    public const int EndMove = 5;
+    public const int Globals = 6;
+    public const int LeftBorder = 7;
+    public const int Level = 8;
+    public const int Move = 9;
+    public const int Position = 10;
+    public const int Resource = 11;
+    public const int RightBorder = 12;
+    public const int ScreenColliderView = 13;
+    public const int TopBorder = 14;
+    public const int View = 15;
 
-    public const int TotalComponents = 10;
+    public const int TotalComponents = 16;
 
     public static readonly string[] componentNames = {
         "Ball",
         "Block",
-        "Board",
+        "BorderOffset",
+        "BorderSize",
+        "BottomBorder",
         "EndMove",
         "Globals",
+        "LeftBorder",
         "Level",
         "Move",
         "Position",
         "Resource",
+        "RightBorder",
+        "ScreenColliderView",
+        "TopBorder",
         "View"
     };
 
     public static readonly System.Type[] componentTypes = {
         typeof(BallComponent),
         typeof(BlockComponent),
-        typeof(BoardComponent),
+        typeof(BorderOffsetComponent),
+        typeof(BorderSizeComponent),
+        typeof(BottomBorderComponent),
         typeof(EndMoveComponent),
         typeof(GlobalsComponent),
+        typeof(LeftBorderComponent),
         typeof(LevelComponent),
         typeof(MoveComponent),
         typeof(PositionComponent),
         typeof(ResourceComponent),
+        typeof(RightBorderComponent),
+        typeof(ScreenColliderViewComponent),
+        typeof(TopBorderComponent),
         typeof(ViewComponent)
     };
 }

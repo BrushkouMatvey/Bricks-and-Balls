@@ -27,21 +27,30 @@
               <e p="Block" t="Include">
                 <e p="BlockComponent.cs" t="Include" />
               </e>
-              <e p="Board" t="Include">
-                <e p="BoardComponent.cs" t="Include" />
-              </e>
               <e p="Common" t="Include">
                 <e p="EndMoveComponent.cs" t="Include" />
                 <e p="MoveComponent.cs" t="Include" />
                 <e p="PositionComponent.cs" t="Include" />
               </e>
               <e p="Input" t="Include">
-                <e p="LeftMouseComponent.cs" t="Include" />
-                <e p="MouseDownComponent.cs" t="Include" />
+                <e p="ClickDownComponent.cs" t="Include" />
+                <e p="ClickUpComponent.cs" t="Include" />
+                <e p="HoldingClickComponent.cs" t="Include" />
               </e>
               <e p="LevelComponent.cs" t="Include" />
+              <e p="Screen" t="Include">
+                <e p="BorderParams" t="Include">
+                  <e p="BorderOffsetComponent.cs" t="Include" />
+                  <e p="BorderSizeComponent.cs" t="Include" />
+                </e>
+                <e p="BottomBorderComponent.cs" t="Include" />
+                <e p="LeftBorderComponent.cs" t="Include" />
+                <e p="RightBorderComponent.cs" t="Include" />
+                <e p="TopBorderComponent.cs" t="Include" />
+              </e>
               <e p="View" t="Include">
                 <e p="ResourceComponent.cs" t="Include" />
+                <e p="ScreenColliderViewComponent.cs" t="Include" />
                 <e p="ViewComponent.cs" t="Include" />
               </e>
             </e>
@@ -49,7 +58,15 @@
               <e p="GameController.cs" t="Include" />
               <e p="LevelCreator.cs" t="Include" />
             </e>
+            <e p="Features" t="Include">
+              <e p="CommonSystems.cs" t="Include" />
+              <e p="GameSystems.cs" t="Include" />
+              <e p="InputSystems.cs" t="Include" />
+              <e p="ScreenSystems.cs" t="Include" />
+              <e p="ViewSystems.cs" t="Include" />
+            </e>
             <e p="Globals.cs" t="Include" />
+            <e p="InputService.cs" t="Include" />
             <e p="LevelsData" t="Include">
               <e p="BlockStruct.cs" t="Include" />
               <e p="enams" t="Include">
@@ -59,7 +76,20 @@
               <e p="Level.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
-              <e p="LevelInirializeSystem.cs" t="Include" />
+              <e p="Common" t="Include">
+                <e p="LevelInirializeSystem.cs" t="Include" />
+                <e p="MoveSystem.cs" t="Include" />
+                <e p="PositionSystem.cs" t="Include" />
+              </e>
+              <e p="Input" t="Include">
+                <e p="HandlingDownHoldingSystem.cs" t="Include" />
+                <e p="HandlingInputSystem.cs" t="Include" />
+                <e p="UpHoldingSystem.cs" t="Include" />
+              </e>
+              <e p="Screen" t="Include">
+                <e p="CreateBorderSystem.cs" t="Include" />
+                <e p="ScreenColliderInitializeSystem.cs" t="Include" />
+              </e>
               <e p="View" t="Include">
                 <e p="InstantiateViewSystem.cs" t="Include" />
               </e>
@@ -70,6 +100,9 @@
           <e p="Generated" t="Include">
             <e p="Components" t="Include">
               <e p="GlobalsComponent.cs" t="Include" />
+              <e p="Interfaces" t="Include">
+                <e p="IGlobalsEntity.cs" t="Include" />
+              </e>
             </e>
             <e p="Contexts.cs" t="Include" />
             <e p="Feature.cs" t="Include" />
@@ -77,13 +110,19 @@
               <e p="Components" t="Include">
                 <e p="GameBallComponent.cs" t="Include" />
                 <e p="GameBlockComponent.cs" t="Include" />
-                <e p="GameBoardComponent.cs" t="Include" />
+                <e p="GameBorderOffsetComponent.cs" t="Include" />
+                <e p="GameBorderSizeComponent.cs" t="Include" />
+                <e p="GameBottomBorderComponent.cs" t="Include" />
                 <e p="GameEndMoveComponent.cs" t="Include" />
                 <e p="GameGlobalsComponent.cs" t="Include" />
+                <e p="GameLeftBorderComponent.cs" t="Include" />
                 <e p="GameLevelComponent.cs" t="Include" />
                 <e p="GameMoveComponent.cs" t="Include" />
                 <e p="GamePositionComponent.cs" t="Include" />
                 <e p="GameResourceComponent.cs" t="Include" />
+                <e p="GameRightBorderComponent.cs" t="Include" />
+                <e p="GameScreenColliderViewComponent.cs" t="Include" />
+                <e p="GameTopBorderComponent.cs" t="Include" />
                 <e p="GameViewComponent.cs" t="Include" />
               </e>
               <e p="GameAttribute.cs" t="Include" />
@@ -94,8 +133,11 @@
             </e>
             <e p="Input" t="Include">
               <e p="Components" t="Include">
-                <e p="InputLeftMouseComponent.cs" t="Include" />
-                <e p="InputMouseDownComponent.cs" t="Include" />
+                <e p="InputClickDownComponent.cs" t="Include" />
+                <e p="InputClickUpComponent.cs" t="Include" />
+                <e p="InputGlobalsComponent.cs" t="Include" />
+                <e p="InputHoldingClickComponent.cs" t="Include" />
+                <e p="InputMousePositionComponent.cs" t="Include" />
               </e>
               <e p="InputAttribute.cs" t="Include" />
               <e p="InputComponentsLookup.cs" t="Include" />

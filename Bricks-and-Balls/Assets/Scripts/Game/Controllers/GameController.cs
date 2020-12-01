@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Entitas;
+using TMPro;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -11,9 +12,10 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         var _contexts = Contexts.sharedInstance;
+        // InputService inputService = new InputService();
+        // _contexts.allContexts.
         _contexts.game.SetGlobals(gameSetup);
-        var levelEntity = _contexts.game.CreateEntity();
-
+        _contexts.input.SetGlobals(gameSetup);
         _systems = CreateSystems(_contexts);
         _systems.Initialize();
     }
@@ -25,8 +27,11 @@ public class GameController : MonoBehaviour
 
     private Systems CreateSystems(Contexts contexts)
     {
-        return new Feature("Game")
-            .Add(new LevelInirializeSystem(contexts))
-            .Add(new InstantiateViewSystem(contexts));
+        return new Feature("Systems")
+            .Add(new GameSystems(contexts))
+            .Add(new InputSystems(contexts))
+            .Add(new ViewSystems(contexts))
+            .Add(new CommonSystems(contexts))
+            .Add(new ScreenSystems(contexts));
     }
 }

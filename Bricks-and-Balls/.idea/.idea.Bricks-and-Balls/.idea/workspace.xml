@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="775fd90f-db13-46d9-b710-ffd4d51004b2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,48 +20,62 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7F859C70-0F9F-483A-9BF9-8DFE22ACEE6E/a6/2dfa6d04/EntityLinkExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/e3/088a0ddd/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFFF7C0B-1952-412C-B811-8DDDD204A124/4c/a9b59c27/ReactiveSystem`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Block/BlockComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Ball/BallComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Board/BoardComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/InputComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/BallInitializeSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Block/BlockInitializeSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Board/BoardInitializeSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelData.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/BlockType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/enams/SimpleBlocksType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelsData/Level_1.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelsData/BlockStruct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/Level.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/levels/Level_1.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/enams/SimpleBlockType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/BlockStruct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/Level.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Ball/BallInitializeSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/LevelInitializationSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/PositionComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/ViewComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/SpriteComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/MoveComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Common/EndMoveComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/MouseDownComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/LeftMouseComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/LevelController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/GameComponentsLookup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/ResourceComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameSpriteComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/InstansiateViewSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/InstantiateViewSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Globals.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/LevelCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/LevelComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameViewComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/PositionSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/LevelInirializeSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameLevelComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/MouseDownComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/Components/InputMouseDownComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/LeftMouseComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/Components/InputLeftMouseComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/ClickDownComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/MousePositionComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/HandlingClickComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/ClickUpConmponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/HoldingClickComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/Components/InputHandlingClickComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/ViewSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Globals.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/HandlingDownHoldingSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/ClickUpComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/InputComponentsLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/Components/InputClickUpConmponentComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/InputSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/GameSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/PositionSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/HandlingInputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/InputService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/MoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/UpHoldingSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Board/BoardComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameBoardComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/LevelInirializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/ScreenInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/ScreenColliderComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/ScreenInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/CommonSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Screen/ScreenInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/ScreenColliderViewComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/ScreenColliderViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/BorderSizeComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/BorderOffsetComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/TopBorderComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/RightBorderComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/LeftBorderComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/BottomBorderComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/GameComponentsLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/levels/Level_1.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/InstantiateViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/CreateBorderSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/ScreenSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Screen/ScreenColliderInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Screen/CreateBorderSystem.cs" />
       </list>
     </option>
   </component>
@@ -70,6 +87,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,7 +99,9 @@
       <updated>1606658134222</updated>
       <workItem from="1606658142695" duration="269000" />
       <workItem from="1606658671505" duration="3880000" />
-      <workItem from="1606663165022" duration="15622000" />
+      <workItem from="1606663165022" duration="26904000" />
+      <workItem from="1606749774733" duration="1421000" />
+      <workItem from="1606764391429" duration="14788000" />
     </task>
     <servers />
   </component>
@@ -96,10 +116,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="714" y="394" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606658409288" />
-    <state x="797" y="94" width="640" height="826" key="dock-window-1" timestamp="1606668028765">
+    <state x="670" y="203" key="RiderGenerateDialog" timestamp="1606735299467">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="797" y="94" width="640" height="826" key="dock-window-1/0.0.1920.1050@0.0.1920.1050" timestamp="1606668028765" />
+    <state x="670" y="203" key="RiderGenerateDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606735299467" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1606779444409">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606779444409" />
+    <state x="797" y="94" width="640" height="826" key="dock-window-1" timestamp="1606765057172">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="797" y="94" width="640" height="826" key="dock-window-1/0.0.1920.1050@0.0.1920.1050" timestamp="1606765057172" />
+    <state x="638" y="124" width="644" height="801" key="find.popup" timestamp="1606740707916">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="638" y="124" width="644" height="801" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606740707916" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1606684450259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
