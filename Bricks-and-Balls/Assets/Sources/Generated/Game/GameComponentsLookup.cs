@@ -13,19 +13,26 @@ public static class GameComponentsLookup {
     public const int BorderOffset = 2;
     public const int BorderSize = 3;
     public const int BottomBorder = 4;
-    public const int EndMove = 5;
-    public const int Globals = 6;
-    public const int LeftBorder = 7;
-    public const int Level = 8;
-    public const int Move = 9;
-    public const int Position = 10;
-    public const int Resource = 11;
-    public const int RightBorder = 12;
-    public const int ScreenColliderView = 13;
-    public const int TopBorder = 14;
-    public const int View = 15;
+    public const int Collision = 5;
+    public const int Destroy = 6;
+    public const int EndMove = 7;
+    public const int Globals = 8;
+    public const int Health = 9;
+    public const int LeftBorder = 10;
+    public const int Level = 11;
+    public const int Move = 12;
+    public const int MoveGameState = 13;
+    public const int Position = 14;
+    public const int Resource = 15;
+    public const int RightBorder = 16;
+    public const int ScreenColliderView = 17;
+    public const int Timer = 18;
+    public const int TimerEnd = 19;
+    public const int TimerRun = 20;
+    public const int TopBorder = 21;
+    public const int View = 22;
 
-    public const int TotalComponents = 16;
+    public const int TotalComponents = 23;
 
     public static readonly string[] componentNames = {
         "Ball",
@@ -33,15 +40,22 @@ public static class GameComponentsLookup {
         "BorderOffset",
         "BorderSize",
         "BottomBorder",
+        "Collision",
+        "Destroy",
         "EndMove",
         "Globals",
+        "Health",
         "LeftBorder",
         "Level",
         "Move",
+        "MoveGameState",
         "Position",
         "Resource",
         "RightBorder",
         "ScreenColliderView",
+        "Timer",
+        "TimerEnd",
+        "TimerRun",
         "TopBorder",
         "View"
     };
@@ -52,15 +66,22 @@ public static class GameComponentsLookup {
         typeof(BorderOffsetComponent),
         typeof(BorderSizeComponent),
         typeof(BottomBorderComponent),
+        typeof(CollisionComponent),
+        typeof(DestroyComponent),
         typeof(EndMoveComponent),
         typeof(GlobalsComponent),
+        typeof(HealthComponent),
         typeof(LeftBorderComponent),
         typeof(LevelComponent),
         typeof(MoveComponent),
+        typeof(MoveGameStateComponent),
         typeof(PositionComponent),
         typeof(ResourceComponent),
         typeof(RightBorderComponent),
         typeof(ScreenColliderViewComponent),
+        typeof(TimerComponent),
+        typeof(TimerEndComponent),
+        typeof(TimerRunComponent),
         typeof(TopBorderComponent),
         typeof(ViewComponent)
     };

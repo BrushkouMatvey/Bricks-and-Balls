@@ -21,40 +21,21 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7F859C70-0F9F-483A-9BF9-8DFE22ACEE6E/a6/2dfa6d04/EntityLinkExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/e3/088a0ddd/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFFF7C0B-1952-412C-B811-8DDDD204A124/4c/a9b59c27/ReactiveSystem`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFFF7C0B-1952-412C-B811-8DDDD204A124/29/ef5353d4/Context`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Controllers/EmitTrigger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/ViewComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameViewComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/PositionSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/LevelInirializeSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/MouseDownComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/Components/InputMouseDownComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/LeftMouseComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/Components/InputLeftMouseComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/ClickDownComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/MousePositionComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/HandlingClickComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/ClickUpConmponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/HoldingClickComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/Components/InputHandlingClickComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/ViewSystems.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Globals.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/HandlingDownHoldingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Input/ClickUpComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/InputComponentsLookup.cs" />
         <option value="$PROJECT_DIR$/Assets/Sources/Generated/Input/Components/InputClickUpConmponentComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/InputSystems.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/GameSystems.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/PositionSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/HandlingInputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/InputService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/MoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/UpHoldingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Board/BoardComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameBoardComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/LevelInirializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/ScreenInitializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/ScreenColliderComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/ScreenInitializeSystem.cs" />
@@ -70,12 +51,33 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/LeftBorderComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/BottomBorderComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/GameComponentsLookup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/levels/Level_1.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/InstantiateViewSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/CreateBorderSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/ScreenSystems.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Screen/ScreenColliderInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Timer/TimerComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Timer/TimerRunComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Timer/TimerEndComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Timer/TimerMoveHoldingSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/GameComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/MoveGameStateComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/HandlingInputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Screen/CreateBorderSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/MoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Block/HealthComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/InstantiateViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Timer/TimerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/UpHoldingSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Game/CollisionComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/ViewComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Timer/TimerMoveHandlingSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Common/DestroyComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/DestroySystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/GameSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/ReactCollisionSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/EmitTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/LevelInirializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LevelsData/levels/Level_1.json" />
       </list>
     </option>
   </component>
@@ -102,6 +104,8 @@
       <workItem from="1606663165022" duration="26904000" />
       <workItem from="1606749774733" duration="1421000" />
       <workItem from="1606764391429" duration="14788000" />
+      <workItem from="1606816661222" duration="17624000" />
+      <workItem from="1606847200855" duration="19588000" />
     </task>
     <servers />
   </component>

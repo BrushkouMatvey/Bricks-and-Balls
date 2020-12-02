@@ -28,7 +28,6 @@ public class CreateBorderSystem : ReactiveSystem<GameEntity> {
 
 	protected override bool Filter(GameEntity entity)
 	{
-		
 		return entity.isTopBorder
 		       || entity.isBottomBorder
 		       || entity.isLeftBorder
@@ -44,7 +43,6 @@ public class CreateBorderSystem : ReactiveSystem<GameEntity> {
 			collider.size = e.borderSize.value;
 			collider.offset = e.borderOffset.value;
 			gameObject.transform.position = e.position.value;
-			
 		}
 	}
 }

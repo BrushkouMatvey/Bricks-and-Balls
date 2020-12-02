@@ -10,7 +10,7 @@ public class MoveSystem : ReactiveSystem<GameEntity> {
 	}
 
 	protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context) {
-		return context.CreateCollector(GameMatcher.Move);
+		return context.CreateCollector(GameMatcher.AnyOf(GameMatcher.Move));
 	}
 
 	protected override bool Filter(GameEntity entity)

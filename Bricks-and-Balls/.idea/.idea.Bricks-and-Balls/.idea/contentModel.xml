@@ -26,18 +26,25 @@
               </e>
               <e p="Block" t="Include">
                 <e p="BlockComponent.cs" t="Include" />
+                <e p="HealthComponent.cs" t="Include" />
               </e>
               <e p="Common" t="Include">
+                <e p="DestroyComponent.cs" t="Include" />
                 <e p="EndMoveComponent.cs" t="Include" />
                 <e p="MoveComponent.cs" t="Include" />
                 <e p="PositionComponent.cs" t="Include" />
+              </e>
+              <e p="Game" t="Include">
+                <e p="CollisionComponent.cs" t="Include" />
+                <e p="LevelComponent.cs" t="Include" />
+                <e p="MoveGameStateComponent.cs" t="Include" />
               </e>
               <e p="Input" t="Include">
                 <e p="ClickDownComponent.cs" t="Include" />
                 <e p="ClickUpComponent.cs" t="Include" />
                 <e p="HoldingClickComponent.cs" t="Include" />
+                <e p="MousePositionComponent.cs" t="Include" />
               </e>
-              <e p="LevelComponent.cs" t="Include" />
               <e p="Screen" t="Include">
                 <e p="BorderParams" t="Include">
                   <e p="BorderOffsetComponent.cs" t="Include" />
@@ -48,6 +55,11 @@
                 <e p="RightBorderComponent.cs" t="Include" />
                 <e p="TopBorderComponent.cs" t="Include" />
               </e>
+              <e p="Timer" t="Include">
+                <e p="TimerComponent.cs" t="Include" />
+                <e p="TimerEndComponent.cs" t="Include" />
+                <e p="TimerRunComponent.cs" t="Include" />
+              </e>
               <e p="View" t="Include">
                 <e p="ResourceComponent.cs" t="Include" />
                 <e p="ScreenColliderViewComponent.cs" t="Include" />
@@ -55,6 +67,7 @@
               </e>
             </e>
             <e p="Controllers" t="Include">
+              <e p="EmitTrigger.cs" t="Include" />
               <e p="GameController.cs" t="Include" />
               <e p="LevelCreator.cs" t="Include" />
             </e>
@@ -77,6 +90,7 @@
             </e>
             <e p="Systems" t="Include">
               <e p="Common" t="Include">
+                <e p="DestroySystem.cs" t="Include" />
                 <e p="LevelInirializeSystem.cs" t="Include" />
                 <e p="MoveSystem.cs" t="Include" />
                 <e p="PositionSystem.cs" t="Include" />
@@ -86,9 +100,14 @@
                 <e p="HandlingInputSystem.cs" t="Include" />
                 <e p="UpHoldingSystem.cs" t="Include" />
               </e>
+              <e p="ReactCollisionSystem.cs" t="Include" />
               <e p="Screen" t="Include">
                 <e p="CreateBorderSystem.cs" t="Include" />
                 <e p="ScreenColliderInitializeSystem.cs" t="Include" />
+              </e>
+              <e p="Timer" t="Include">
+                <e p="TimerMoveHandlingSystem.cs" t="Include" />
+                <e p="TimerSystem.cs" t="Include" />
               </e>
               <e p="View" t="Include">
                 <e p="InstantiateViewSystem.cs" t="Include" />
@@ -113,15 +132,22 @@
                 <e p="GameBorderOffsetComponent.cs" t="Include" />
                 <e p="GameBorderSizeComponent.cs" t="Include" />
                 <e p="GameBottomBorderComponent.cs" t="Include" />
+                <e p="GameCollisionComponent.cs" t="Include" />
+                <e p="GameDestroyComponent.cs" t="Include" />
                 <e p="GameEndMoveComponent.cs" t="Include" />
                 <e p="GameGlobalsComponent.cs" t="Include" />
+                <e p="GameHealthComponent.cs" t="Include" />
                 <e p="GameLeftBorderComponent.cs" t="Include" />
                 <e p="GameLevelComponent.cs" t="Include" />
                 <e p="GameMoveComponent.cs" t="Include" />
+                <e p="GameMoveGameStateComponent.cs" t="Include" />
                 <e p="GamePositionComponent.cs" t="Include" />
                 <e p="GameResourceComponent.cs" t="Include" />
                 <e p="GameRightBorderComponent.cs" t="Include" />
                 <e p="GameScreenColliderViewComponent.cs" t="Include" />
+                <e p="GameTimerComponent.cs" t="Include" />
+                <e p="GameTimerEndComponent.cs" t="Include" />
+                <e p="GameTimerRunComponent.cs" t="Include" />
                 <e p="GameTopBorderComponent.cs" t="Include" />
                 <e p="GameViewComponent.cs" t="Include" />
               </e>

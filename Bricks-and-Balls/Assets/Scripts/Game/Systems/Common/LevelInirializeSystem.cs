@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class LevelInirializeSystem : IInitializeSystem  {
 	private Contexts _contexts;
-
-    public LevelInirializeSystem(Contexts contexts) {
+	private float screenWidth, screenHeight;
+	private List<int> visableArea;
+	public LevelInirializeSystem(Contexts contexts) {
     	_contexts = contexts;
     }
 
@@ -16,6 +17,9 @@ public class LevelInirializeSystem : IInitializeSystem  {
 		LevelLoader loader = new LevelLoader();
 		loader.LoadLevel("D:/Docs/Learning/Programming/Unity/Bricks-and-Balls/Bricks-and-Balls/Assets/Scripts/Game/LevelsData/levels/Level_1.json");
 		levelEntity.AddLevel(loader.Level);
+		screenHeight = Screen.height;
+		screenWidth = Screen.height;
+		visableArea = levelEntity.level.value.VisibleAreaSize;
 		createBalls(levelEntity.level.value.NumOfBalls);
 		createBlocks(levelEntity.level.value.Blocks);
 	}
@@ -35,6 +39,7 @@ public class LevelInirializeSystem : IInitializeSystem  {
 		{
 			var blockEntity = _contexts.game.CreateEntity();
 			blockEntity.isBlock = true;
+			blockEntity.AddHealth(blockData.Health);
 			blockEntity.AddPosition(new Vector2(blockData.X, blockData.Y));
 			switch (blockData.Type)
 			{
@@ -42,14 +47,13 @@ public class LevelInirializeSystem : IInitializeSystem  {
 					switch (blockData.SimpleBlockType)
 					{	
 						case SimpleBlockType.Circle:
-							blockEntity.AddResource(_contexts.game.globals.value.rectangleSimpleBlock);
+							blockEntity.AddResource(_contexts.game.globals.value.circleSimpleBlock);
 							break;
 						case SimpleBlockType.Rectangle:
-							Debug.Log("Rect");
 							blockEntity.AddResource(_contexts.game.globals.value.rectangleSimpleBlock);
 							break;
 						case SimpleBlockType.Rhombus:
-							blockEntity.AddResource(_contexts.game.globals.value.rectangleSimpleBlock);
+							blockEntity.AddResource(_contexts.game.globals.value.rhombusSimpleBlock);
 							break;
 						case SimpleBlockType.Triangle:
 							blockEntity.AddResource(_contexts.game.globals.value.triangleSimpleBlock);
