@@ -37,7 +37,7 @@ public class ReactCollisionSystem : ReactiveSystem<GameEntity> {
 		var _inputEntities = _contexts.input.GetEntities(InputMatcher.ClickUp).ToList();
 		var _timerEntities = _contexts.game.GetEntities(GameMatcher.Timer).ToList();
 		var _ballEntities = _contexts.game.GetEntities(GameMatcher.Ball).ToList();
-		var _blockEntities = _contexts.game.GetEntities(GameMatcher.Block).ToList();
+		var _blockEntities = _contexts.game.GetEntities(GameMatcher.AnyOf(GameMatcher.Block, GameMatcher.BombBlock)).ToList();
 		foreach (var e in entities)
 		{
 			var first= e.collision.first;
