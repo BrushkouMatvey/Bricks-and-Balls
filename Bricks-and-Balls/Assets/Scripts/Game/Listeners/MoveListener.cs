@@ -14,6 +14,6 @@ public class MoveListener: MonoBehaviour, IEventListener, IMoveListener
     public void OnMove(GameEntity entity, Vector2 direction, float force)
     {
         var r = GetComponent<Rigidbody2D>();
-        r.AddForce(direction * (force - 200));
+        r.AddForce(direction * force);
     }
 }
