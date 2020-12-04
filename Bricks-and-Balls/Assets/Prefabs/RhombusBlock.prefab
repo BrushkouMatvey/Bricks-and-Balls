@@ -12,6 +12,10 @@ GameObject:
   - component: {fileID: 3958941522884158895}
   - component: {fileID: 2294666507257203625}
   - component: {fileID: 458933680176779082}
+  - component: {fileID: -1059812073521799584}
+  - component: {fileID: 468609494462124536}
+  - component: {fileID: 1826044740521628837}
+  - component: {fileID: -6893299088754185469}
   m_Layer: 9
   m_Name: RhombusBlock
   m_TagString: Untagged
@@ -138,6 +142,54 @@ PolygonCollider2D:
       - {x: -0.017045673, y: 0.33333334}
       - {x: -0.3319831, y: 0.018900096}
       - {x: -0.33063284, y: -0.019746184}
+--- !u!114 &-1059812073521799584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904658498011601557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77fdef7eb7574cc4cb55db30ab8a2d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &468609494462124536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904658498011601557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510854dbf94539d41bdf7425c8d0387d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1826044740521628837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904658498011601557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e1412d9dfc6d4449873a2da6883c1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6893299088754185469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904658498011601557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0450fa2efe4762f4abc48d91503c09a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7658281337454336968
 GameObject:
   m_ObjectHideFlags: 0

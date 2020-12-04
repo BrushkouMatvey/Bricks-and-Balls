@@ -1,6 +1,7 @@
 ﻿using Entitas;
+using Entitas.CodeGeneration.Attributes;
 
-[Game]
-public class DestroyComponent : IComponent {
-
+[Game, Event(EventTarget.Self)]
+public sealed class DestroyComponent : IComponent
+{
 }

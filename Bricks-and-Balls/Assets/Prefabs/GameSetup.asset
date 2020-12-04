@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff28ab473ec4c64882df0c86dd7a04e, type: 3}
+  m_Script: {fileID: 11500000, guid: fc934186ed69fc7419fcd3731fefc147, type: 3}
   m_Name: GameSetup
   m_EditorClassIdentifier: 
   ball: {fileID: 419869685822058551, guid: afa88ddc57960614a8c80f0f7df0e1c5, type: 3}
@@ -25,3 +25,8 @@ MonoBehaviour:
     type: 3}
   bombBlock: {fileID: 4934270582998330204, guid: c2f4f395767cfb8409154b3fa24c37e9,
     type: 3}
+  borderScreenVertical: {fileID: 1424146034922040709, guid: 0b6fcd5aa9d9028459752881f954b523,
+    type: 3}
+  borderScreenHorizontal: {fileID: 3310970273437810608, guid: 39e289bf9d939bb459de222c52da2e56,
+    type: 3}
+  level: {fileID: 4900000, guid: f7d4f0b789ebd9840bc5842f9585dc10, type: 3}

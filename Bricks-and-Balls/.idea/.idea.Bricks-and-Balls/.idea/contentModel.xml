@@ -23,14 +23,16 @@
             <e p="Components" t="Include">
               <e p="Ball" t="Include">
                 <e p="BallComponent.cs" t="Include" />
+                <e p="FirstBallPositionComponent.cs" t="Include" />
               </e>
               <e p="Block" t="Include">
                 <e p="BlockComponent.cs" t="Include" />
+                <e p="BombBlockComponent.cs" t="Include" />
                 <e p="HealthComponent.cs" t="Include" />
               </e>
               <e p="Common" t="Include">
                 <e p="DestroyComponent.cs" t="Include" />
-                <e p="EndMoveComponent.cs" t="Include" />
+                <e p="EndTurnMoveComponent.cs" t="Include" />
                 <e p="MoveComponent.cs" t="Include" />
                 <e p="PositionComponent.cs" t="Include" />
               </e>
@@ -46,14 +48,14 @@
                 <e p="MousePositionComponent.cs" t="Include" />
               </e>
               <e p="Screen" t="Include">
+                <e p="BorderComponent.cs" t="Include" />
                 <e p="BorderParams" t="Include">
                   <e p="BorderOffsetComponent.cs" t="Include" />
+                  <e p="BorderRotation.cs" t="Include" />
+                  <e p="BorderScale.cs" t="Include" />
                   <e p="BorderSizeComponent.cs" t="Include" />
                 </e>
                 <e p="BottomBorderComponent.cs" t="Include" />
-                <e p="LeftBorderComponent.cs" t="Include" />
-                <e p="RightBorderComponent.cs" t="Include" />
-                <e p="TopBorderComponent.cs" t="Include" />
               </e>
               <e p="Timer" t="Include">
                 <e p="TimerComponent.cs" t="Include" />
@@ -63,23 +65,36 @@
               <e p="View" t="Include">
                 <e p="ResourceComponent.cs" t="Include" />
                 <e p="ScreenColliderViewComponent.cs" t="Include" />
-                <e p="ViewComponent.cs" t="Include" />
+                <e p="ViewControllerComponent.cs" t="Include" />
+                <e p="ViewServiceComponent.cs" t="Include" />
               </e>
+            </e>
+            <e p="Config" t="Include">
+              <e p="Globals.cs" t="Include" />
             </e>
             <e p="Controllers" t="Include">
               <e p="EmitTrigger.cs" t="Include" />
               <e p="GameController.cs" t="Include" />
-              <e p="LevelCreator.cs" t="Include" />
+              <e p="LevelController.cs" t="Include" />
             </e>
             <e p="Features" t="Include">
               <e p="CommonSystems.cs" t="Include" />
+              <e p="EventSystems.cs" t="Include" />
               <e p="GameSystems.cs" t="Include" />
               <e p="InputSystems.cs" t="Include" />
               <e p="ScreenSystems.cs" t="Include" />
+              <e p="ServiceRegistrationSystems.cs" t="Include" />
               <e p="ViewSystems.cs" t="Include" />
             </e>
-            <e p="Globals.cs" t="Include" />
-            <e p="InputService.cs" t="Include" />
+            <e p="Interfaces" t="Include">
+              <e p="Events" t="Include">
+                <e p="IEventListener.cs" t="Include" />
+              </e>
+              <e p="View" t="Include">
+                <e p="IViewController.cs" t="Include" />
+                <e p="IViewService.cs" t="Include" />
+              </e>
+            </e>
             <e p="LevelsData" t="Include">
               <e p="BlockStruct.cs" t="Include" />
               <e p="enams" t="Include">
@@ -88,19 +103,33 @@
               </e>
               <e p="Level.cs" t="Include" />
             </e>
+            <e p="Listeners" t="Include">
+              <e p="DestroyListener.cs" t="Include" />
+              <e p="EndTurnMoveListener.cs" t="Include" />
+              <e p="HealthListener.cs" t="Include" />
+              <e p="MoveListener.cs" t="Include" />
+              <e p="PositionListener.cs" t="Include" />
+            </e>
+            <e p="Services" t="Include">
+              <e p="InputService.cs" t="Include" />
+              <e p="Services.cs" t="Include" />
+              <e p="UnityViewService.cs" t="Include" />
+              <e p="View.cs" t="Include" />
+            </e>
             <e p="Systems" t="Include">
+              <e p="Ball" t="Include">
+                <e p="CheckFirstBallPosition.cs" t="Include" />
+              </e>
               <e p="Common" t="Include">
-                <e p="DestroySystem.cs" t="Include" />
+                <e p="HealthCheckSystem.cs" t="Include" />
                 <e p="LevelInirializeSystem.cs" t="Include" />
-                <e p="MoveSystem.cs" t="Include" />
-                <e p="PositionSystem.cs" t="Include" />
+                <e p="ReactCollisionSystem.cs" t="Include" />
               </e>
               <e p="Input" t="Include">
                 <e p="HandlingDownHoldingSystem.cs" t="Include" />
                 <e p="HandlingInputSystem.cs" t="Include" />
                 <e p="UpHoldingSystem.cs" t="Include" />
               </e>
-              <e p="ReactCollisionSystem.cs" t="Include" />
               <e p="Screen" t="Include">
                 <e p="CreateBorderSystem.cs" t="Include" />
                 <e p="ScreenColliderInitializeSystem.cs" t="Include" />
@@ -110,7 +139,8 @@
                 <e p="TimerSystem.cs" t="Include" />
               </e>
               <e p="View" t="Include">
-                <e p="InstantiateViewSystem.cs" t="Include" />
+                <e p="LoadPrefabSystem.cs" t="Include" />
+                <e p="RegisterViewServiceSystem.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -124,32 +154,64 @@
               </e>
             </e>
             <e p="Contexts.cs" t="Include" />
+            <e p="Events" t="Include">
+              <e p="Components" t="Include">
+                <e p="DestroyListenerComponent.cs" t="Include" />
+                <e p="EndTurnMoveListenerComponent.cs" t="Include" />
+                <e p="HealthListenerComponent.cs" t="Include" />
+                <e p="MoveListenerComponent.cs" t="Include" />
+                <e p="PositionListenerComponent.cs" t="Include" />
+              </e>
+              <e p="GameEventSystems.cs" t="Include" />
+              <e p="Interfaces" t="Include">
+                <e p="IDestroyListener.cs" t="Include" />
+                <e p="IEndTurnMoveListener.cs" t="Include" />
+                <e p="IHealthListener.cs" t="Include" />
+                <e p="IMoveListener.cs" t="Include" />
+                <e p="IPositionListener.cs" t="Include" />
+              </e>
+              <e p="Systems" t="Include">
+                <e p="DestroyEventSystem.cs" t="Include" />
+                <e p="EndTurnMoveEventSystem.cs" t="Include" />
+                <e p="HealthEventSystem.cs" t="Include" />
+                <e p="MoveEventSystem.cs" t="Include" />
+                <e p="PositionEventSystem.cs" t="Include" />
+              </e>
+            </e>
             <e p="Feature.cs" t="Include" />
             <e p="Game" t="Include">
               <e p="Components" t="Include">
                 <e p="GameBallComponent.cs" t="Include" />
                 <e p="GameBlockComponent.cs" t="Include" />
+                <e p="GameBombBlockComponent.cs" t="Include" />
+                <e p="GameBorderComponent.cs" t="Include" />
                 <e p="GameBorderOffsetComponent.cs" t="Include" />
+                <e p="GameBorderRotationComponent.cs" t="Include" />
+                <e p="GameBorderScaleComponent.cs" t="Include" />
                 <e p="GameBorderSizeComponent.cs" t="Include" />
                 <e p="GameBottomBorderComponent.cs" t="Include" />
                 <e p="GameCollisionComponent.cs" t="Include" />
                 <e p="GameDestroyComponent.cs" t="Include" />
-                <e p="GameEndMoveComponent.cs" t="Include" />
+                <e p="GameDestroyListenerComponent.cs" t="Include" />
+                <e p="GameEndTurnMoveComponent.cs" t="Include" />
+                <e p="GameEndTurnMoveListenerComponent.cs" t="Include" />
+                <e p="GameFirstBallPositionComponent.cs" t="Include" />
                 <e p="GameGlobalsComponent.cs" t="Include" />
                 <e p="GameHealthComponent.cs" t="Include" />
-                <e p="GameLeftBorderComponent.cs" t="Include" />
+                <e p="GameHealthListenerComponent.cs" t="Include" />
                 <e p="GameLevelComponent.cs" t="Include" />
                 <e p="GameMoveComponent.cs" t="Include" />
                 <e p="GameMoveGameStateComponent.cs" t="Include" />
+                <e p="GameMoveListenerComponent.cs" t="Include" />
                 <e p="GamePositionComponent.cs" t="Include" />
+                <e p="GamePositionListenerComponent.cs" t="Include" />
                 <e p="GameResourceComponent.cs" t="Include" />
-                <e p="GameRightBorderComponent.cs" t="Include" />
                 <e p="GameScreenColliderViewComponent.cs" t="Include" />
                 <e p="GameTimerComponent.cs" t="Include" />
                 <e p="GameTimerEndComponent.cs" t="Include" />
                 <e p="GameTimerRunComponent.cs" t="Include" />
-                <e p="GameTopBorderComponent.cs" t="Include" />
-                <e p="GameViewComponent.cs" t="Include" />
+                <e p="GameViewControllerComponent.cs" t="Include" />
+                <e p="GameViewServiceComponent.cs" t="Include" />
               </e>
               <e p="GameAttribute.cs" t="Include" />
               <e p="GameComponentsLookup.cs" t="Include" />

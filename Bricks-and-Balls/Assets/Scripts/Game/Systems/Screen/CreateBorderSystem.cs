@@ -10,39 +10,27 @@ public class CreateBorderSystem : ReactiveSystem<GameEntity> {
 
 	protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
 	{
-		Collector<GameEntity> collector = new Collector<GameEntity>(new [] {
-				context.GetGroup(GameMatcher.LeftBorder),
-				context.GetGroup(GameMatcher.RightBorder),
-				context.GetGroup(GameMatcher.TopBorder),
-				context.GetGroup(GameMatcher.BottomBorder)
-			},
-			new [] {
-				GroupEvent.Added,
-				GroupEvent.Added,
-				GroupEvent.Added,
-				GroupEvent.Added
-			});
-		Debug.Log(collector.count);
-		return collector;
+		return context.CreateCollector(GameMatcher.Border);
 	}
 
 	protected override bool Filter(GameEntity entity)
 	{
-		return entity.isTopBorder
-		       || entity.isBottomBorder
-		       || entity.isLeftBorder
-		       || entity.isRightBorder;
+		return entity.isBorder;
 	}
 
 	protected override void Execute(List<GameEntity> entities) {
+		// Debug.Log("sadadsadsad");
 		foreach (var e in entities)
 		{
-			GameObject gameObject;
-			gameObject = new GameObject();
-			BoxCollider2D collider = gameObject.AddComponent<BoxCollider2D>();
-			collider.size = e.borderSize.value;
-			collider.offset = e.borderOffset.value;
-			gameObject.transform.position = e.position.value;
+			
+			e.viewController.instance.boxCollider2D.size = e.borderSize.value;
+			e.viewController.instance.boxCollider2D.offset = e.borderOffset.value;
+			e.viewController.instance.Position = e.position.value;
+			// Debug.Log("e.borderScale.value;");
+			// Debug.Log(e.borderScale.value);
+			e.viewController.instance.Scale = e.borderScale.value;
+			e.viewController.instance.Rotation *= Quaternion.Euler(e.borderRotation.value.x, e.borderRotation.value.y,
+				e.borderRotation.value.z);
 		}
 	}
 }

@@ -13,34 +13,47 @@ public class ScreenColliderInitializeSystem : IInitializeSystem  {
 		Vector3 bottomLeftScreenPoint = Camera.main.ScreenToWorldPoint(new Vector3(0f, 0f, 0f));
 		Vector3 topRightScreenPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
 		
-		var size = new Vector2(Mathf.Abs(bottomLeftScreenPoint.x - topRightScreenPoint.x), 0.1f);
+		var size = new Vector2(Mathf.Abs(bottomLeftScreenPoint.x - topRightScreenPoint.x), 0.15f);
 		var offset = new Vector2(size.x / 2f, size.y / 2f);
 		
-		var entityTopBorder = _contexts.game.CreateEntity();
-		entityTopBorder.isTopBorder = true;
-		entityTopBorder.AddBorderSize(size);
-		entityTopBorder.AddBorderOffset(offset);
-		entityTopBorder.AddPosition(new Vector2(-size.x / 2f, topRightScreenPoint.y));
+		CreateBorderEntity(size, offset, new Vector2(-size.x / 2f, topRightScreenPoint.y), 
+											new Vector2(size.x, 1),
+											new Vector3(0, 0, 0),
+											_contexts.game.globals.value.borderScreenHorizontal);
+		var bottomBorder = CreateBorderEntity(size, new Vector2(offset.x, 0), 
+												new Vector2(-size.x / 2f, - topRightScreenPoint.y), 
+													new Vector2(size.x, 1),
+												new Vector3(0, 0, 0),
+												_contexts.game.globals.value.borderScreenHorizontal);
+		bottomBorder.isBottomBorder = true;
 		
-		var entityBottomBorder = _contexts.game.CreateEntity();
-		entityBottomBorder.isBottomBorder = true;
-		entityBottomBorder.AddBorderSize(size);
-		entityBottomBorder.AddBorderOffset(offset);
-		entityBottomBorder.AddPosition(new Vector2(-size.x / 2f, bottomLeftScreenPoint.y - size.y));
+		size = new Vector2(0.15f, Mathf.Abs(topRightScreenPoint.y - bottomLeftScreenPoint.y));
+		offset = new Vector2(-0.02f, size.y / 2f);
+		CreateBorderEntity(size, offset, 
+			new Vector2(-topRightScreenPoint.x, bottomLeftScreenPoint.y), 
+				new Vector2(1, size.y),
+			new Vector3(0, 0, 0),
+					_contexts.game.globals.value.borderScreenVertical);
 		
-		size = new Vector2(0.1f, Mathf.Abs(topRightScreenPoint.y - bottomLeftScreenPoint.y));
-		offset = new Vector2(size.x / 2f, size.y / 2f);
-		
-		var entityLeftBorder = _contexts.game.CreateEntity();
-		entityLeftBorder.isLeftBorder = true;
-		entityLeftBorder.AddBorderSize(size);
-		entityLeftBorder.AddBorderOffset(offset);
-		entityLeftBorder.AddPosition(new Vector2(((bottomLeftScreenPoint.x - topRightScreenPoint.x) / 2f) - size.x, bottomLeftScreenPoint.y));
-		
-		var entityRightBorder = _contexts.game.CreateEntity();
-		entityRightBorder.isRightBorder = true;
-		entityRightBorder.AddBorderSize(size);
-		entityRightBorder.AddBorderOffset(offset);
-		entityRightBorder.AddPosition(new Vector2(topRightScreenPoint.x, bottomLeftScreenPoint.y));
-	}		
+		CreateBorderEntity(size,
+			new Vector2(0.01f, offset.y),
+			new Vector2(topRightScreenPoint.x, bottomLeftScreenPoint.y), 
+			new Vector2(1, size.y),
+			new Vector3(0, 0, 0),
+			_contexts.game.globals.value.borderScreenVertical);
+	}
+
+	public GameEntity CreateBorderEntity(Vector2 size, Vector2 offset, Vector2 position, Vector2 scale, Vector3 rotation, GameObject prefab)
+	{
+		var entityBorder = _contexts.game.CreateEntity();
+		entityBorder.isBorder = true;
+		entityBorder.AddResource(prefab);
+		entityBorder.AddBorderSize(size);
+		entityBorder.AddBorderOffset(offset);
+		entityBorder.AddPosition(position);
+		entityBorder.AddBorderScale(scale);
+		entityBorder.AddBorderRotation(rotation);
+
+		return entityBorder;
+	}
 }

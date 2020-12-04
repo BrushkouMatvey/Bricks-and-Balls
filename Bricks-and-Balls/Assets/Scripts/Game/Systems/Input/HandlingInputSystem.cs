@@ -32,11 +32,11 @@ public class HandlingInputSystem : IInitializeSystem, IExecuteSystem  {
 		}
 		if (InputService.isScreenUpClick())
 		{
+			// Debug.Log("_clickEntity.ReplaceMousePosition(InputService.clickPosition);");
 			_clickEntity.ReplaceMousePosition(InputService.clickPosition);
 			_clickEntity.isHoldingClick = false;
+			_clickEntity.isClickDown = false;
 			_clickEntity.isClickUp = true;
-			Debug.Log("_clickEntity.isClickUp = true;");
-
 		}
 	}
 

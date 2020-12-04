@@ -58,21 +58,21 @@ public partial class Contexts : Entitas.IContexts {
 //------------------------------------------------------------------------------
 public partial class Contexts {
 
-    public const string View = "View";
+    public const string ViewController = "ViewController";
 
     [Entitas.CodeGeneration.Attributes.PostConstructor]
     public void InitializeEntityIndices() {
-        game.AddEntityIndex(new Entitas.EntityIndex<GameEntity, UnityEngine.GameObject>(
-            View,
-            game.GetGroup(GameMatcher.View),
-            (e, c) => ((ViewComponent)c).gameObject));
+        game.AddEntityIndex(new Entitas.EntityIndex<GameEntity, IViewController>(
+            ViewController,
+            game.GetGroup(GameMatcher.ViewController),
+            (e, c) => ((ViewControllerComponent)c).instance));
     }
 }
 
 public static class ContextsExtensions {
 
-    public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithView(this GameContext context, UnityEngine.GameObject gameObject) {
-        return ((Entitas.EntityIndex<GameEntity, UnityEngine.GameObject>)context.GetEntityIndex(Contexts.View)).GetEntities(gameObject);
+    public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithViewController(this GameContext context, IViewController instance) {
+        return ((Entitas.EntityIndex<GameEntity, IViewController>)context.GetEntityIndex(Contexts.ViewController)).GetEntities(instance);
     }
 }
 //------------------------------------------------------------------------------

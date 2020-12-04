@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3359126526586105249}
   - component: {fileID: -5353190612296471247}
   - component: {fileID: 9031636297324914127}
+  - component: {fileID: 482960855114938566}
+  - component: {fileID: -1784196537286805072}
   m_Layer: 9
   m_Name: LaserProjectile
   m_TagString: Untagged
@@ -137,3 +139,27 @@ PolygonCollider2D:
       - {x: 0.16699463, y: -0.034973156}
       - {x: 0.16645423, y: 0.03189184}
       - {x: 0.14666668, y: 0.04729801}
+--- !u!114 &482960855114938566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8811167696097676835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77fdef7eb7574cc4cb55db30ab8a2d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1784196537286805072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8811167696097676835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510854dbf94539d41bdf7425c8d0387d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

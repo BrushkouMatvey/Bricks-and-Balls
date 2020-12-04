@@ -5,20 +5,22 @@ using UnityEngine;
 
 public class LevelInirializeSystem : IInitializeSystem  {
 	private Contexts _contexts;
-	private float screenWidth, screenHeight;
+	
+	private Vector3 bottomLeftScreenPoint; 
+	private Vector3 topRightScreenPoint; 
 	private List<int> visableArea;
 	public LevelInirializeSystem(Contexts contexts) {
     	_contexts = contexts;
+        bottomLeftScreenPoint = Camera.main.ScreenToWorldPoint(new Vector3(0f, 0f, 0f));
+        topRightScreenPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
     }
 
 	public void Initialize() {
 		// Initialization code here
 		var levelEntity = _contexts.game.CreateEntity();
-		LevelLoader loader = new LevelLoader();
-		loader.LoadLevel("D:/Docs/Learning/Programming/Unity/Bricks-and-Balls/Bricks-and-Balls/Assets/Scripts/Game/LevelsData/levels/Level_1.json");
+		LevelController loader = new LevelController();
+		loader.LoadLevel(_contexts.game.globals.value.level);
 		levelEntity.AddLevel(loader.Level);
-		screenHeight = Screen.height;
-		screenWidth = Screen.height;
 		visableArea = levelEntity.level.value.VisibleAreaSize;
 		createBalls(levelEntity.level.value.NumOfBalls);
 		createBlocks(levelEntity.level.value.Blocks);
@@ -29,8 +31,9 @@ public class LevelInirializeSystem : IInitializeSystem  {
 		{
 			var ballEntity = _contexts.game.CreateEntity();
 			ballEntity.isBall = true;
-			ballEntity.AddPosition(new Vector2(0, 0));
+
 			ballEntity.AddResource(_contexts.game.globals.value.ball);
+			ballEntity.ReplacePosition(new Vector2(0, -topRightScreenPoint.y + 0.18f));
 		}
 	}
 	private void createBlocks(List<BlockStruct> blocksData)
@@ -38,12 +41,12 @@ public class LevelInirializeSystem : IInitializeSystem  {
 		foreach (var blockData in blocksData)
 		{
 			var blockEntity = _contexts.game.CreateEntity();
-			blockEntity.isBlock = true;
 			blockEntity.AddHealth(blockData.Health);
-			blockEntity.AddPosition(new Vector2(blockData.X, blockData.Y));
+
 			switch (blockData.Type)
 			{
 				case BlockType.SimpleBlock:
+					blockEntity.isBlock = true;
 					switch (blockData.SimpleBlockType)
 					{	
 						case SimpleBlockType.Circle:
@@ -62,11 +65,13 @@ public class LevelInirializeSystem : IInitializeSystem  {
 					break;
 				case  BlockType.BombBlock: 
 					blockEntity.AddResource(_contexts.game.globals.value.bombBlock);
+					blockEntity.AddBombBlock(blockData.Damage, blockData.DamageAreaSize);
 					break;
 				case  BlockType.LaserBlock: 
 					blockEntity.AddResource(_contexts.game.globals.value.laserBlock);
 					break;
 			}
+			blockEntity.ReplacePosition(new Vector2(blockData.X, blockData.Y));
 		}
 	}
 }

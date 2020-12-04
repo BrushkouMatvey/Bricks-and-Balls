@@ -8,12 +8,13 @@ public class GameController : MonoBehaviour
 {
     public Globals gameSetup;
     private Systems _systems;
+
+    private Services _services;
     // Start is called before the first frame update
     private void Start()
     {
         var _contexts = Contexts.sharedInstance;
-        // InputService inputService = new InputService();
-        // _contexts.allContexts.
+        _services = new Services(new UnityViewService());
         _contexts.game.SetGlobals(gameSetup);
         _contexts.input.SetGlobals(gameSetup);
         _systems = CreateSystems(_contexts);
@@ -29,9 +30,12 @@ public class GameController : MonoBehaviour
     {
         return new Feature("Systems")
             .Add(new GameSystems(contexts))
-            .Add(new InputSystems(contexts))
+            .Add(new EventSystems(contexts))
+            .Add(new ServiceRegistrationSystems(contexts, _services))
             .Add(new ViewSystems(contexts))
+            .Add(new InputSystems(contexts))
             .Add(new CommonSystems(contexts))
             .Add(new ScreenSystems(contexts));
+
     }
 }
