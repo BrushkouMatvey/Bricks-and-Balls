@@ -10,7 +10,7 @@ public class GameSystems : Feature  {
         Add(new TimerMoveHandlingSystem(contexts));
         Add(new ReactCollisionSystem(contexts));
         Add(new HealthCheckSystem(contexts));
-        // Add(new DestroySystem(contexts));
+        Add(new SmoothlyMoveSystem(contexts));
 
     }	
 }

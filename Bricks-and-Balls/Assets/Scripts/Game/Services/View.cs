@@ -55,7 +55,6 @@ public class View : MonoBehaviour, IViewController
     public void DestroyView() {
         gameObject.Unlink();
         Destroy(gameObject);
-       
     }
 
 }

@@ -8,5 +8,6 @@ public class EventSystems : Feature  {
         Add(new MoveEventSystem(contexts));
         Add(new HealthEventSystem(contexts));
         Add(new EndTurnMoveEventSystem(contexts));
+        Add(new SmoothlyMoveEventSystem(contexts));
     }	
 }

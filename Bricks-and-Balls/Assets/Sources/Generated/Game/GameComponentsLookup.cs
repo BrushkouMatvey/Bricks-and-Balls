@@ -34,13 +34,15 @@ public static class GameComponentsLookup {
     public const int PositionListener = 23;
     public const int Resource = 24;
     public const int ScreenColliderView = 25;
-    public const int Timer = 26;
-    public const int TimerEnd = 27;
-    public const int TimerRun = 28;
-    public const int ViewController = 29;
-    public const int ViewService = 30;
+    public const int SmoothlyMove = 26;
+    public const int SmoothlyMoveListener = 27;
+    public const int Timer = 28;
+    public const int TimerEnd = 29;
+    public const int TimerRun = 30;
+    public const int ViewController = 31;
+    public const int ViewService = 32;
 
-    public const int TotalComponents = 31;
+    public const int TotalComponents = 33;
 
     public static readonly string[] componentNames = {
         "Ball",
@@ -69,6 +71,8 @@ public static class GameComponentsLookup {
         "PositionListener",
         "Resource",
         "ScreenColliderView",
+        "SmoothlyMove",
+        "SmoothlyMoveListener",
         "Timer",
         "TimerEnd",
         "TimerRun",
@@ -103,6 +107,8 @@ public static class GameComponentsLookup {
         typeof(PositionListenerComponent),
         typeof(ResourceComponent),
         typeof(ScreenColliderViewComponent),
+        typeof(SmoothlyMoveComponent),
+        typeof(SmoothlyMoveListenerComponent),
         typeof(TimerComponent),
         typeof(TimerEndComponent),
         typeof(TimerRunComponent),

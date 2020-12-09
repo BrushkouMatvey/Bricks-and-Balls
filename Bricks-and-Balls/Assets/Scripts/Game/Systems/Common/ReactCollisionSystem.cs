@@ -59,10 +59,10 @@ public class ReactCollisionSystem : ReactiveSystem<GameEntity> {
 
 			if (second.isBottomBorder)
 			{
-				Debug.Log(ballCount);
 				if (ballCount == 0)
 				{
 					firstBallEndTurn = first;
+
 					first.ReplacePosition(first.viewController.instance.Position);
 					first.AddFirstBallPosition(first.position.value);
 					ballCount++;
@@ -70,7 +70,13 @@ public class ReactCollisionSystem : ReactiveSystem<GameEntity> {
 				else if (ballCount < _numOfBalls)
 				{
 					first.viewController.instance.rigidbody2D.velocity = Vector3.zero;
-					first.ReplacePosition(firstBallEndTurn.position.value);
+					//first.viewController.instance.Position = Vector3.Lerp (first.position.value, firstBallEndTurn.position.value, 2.0f);
+					// Debug.Log(first.position.value);
+					Debug.Log(firstBallEndTurn.position.value);
+					first.ReplacePosition(first.viewController.instance.Position);
+					first.ReplaceSmoothlyMove( first.position.value, firstBallEndTurn.position.value);
+					
+					//first.ReplacePosition(firstBallEndTurn.position.value);
 					if (ballCount == _numOfBalls - 1)
 					{
 						foreach (var bl in _blockEntities)

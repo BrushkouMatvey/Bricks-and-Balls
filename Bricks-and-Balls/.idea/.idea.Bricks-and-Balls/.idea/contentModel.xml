@@ -24,6 +24,7 @@
               <e p="Ball" t="Include">
                 <e p="BallComponent.cs" t="Include" />
                 <e p="FirstBallPositionComponent.cs" t="Include" />
+                <e p="SmoothlyMoveComponent.cs" t="Include" />
               </e>
               <e p="Block" t="Include">
                 <e p="BlockComponent.cs" t="Include" />
@@ -109,6 +110,7 @@
               <e p="HealthListener.cs" t="Include" />
               <e p="MoveListener.cs" t="Include" />
               <e p="PositionListener.cs" t="Include" />
+              <e p="SmoothlyMoveListener.cs" t="Include" />
             </e>
             <e p="Services" t="Include">
               <e p="InputService.cs" t="Include" />
@@ -119,6 +121,7 @@
             <e p="Systems" t="Include">
               <e p="Ball" t="Include">
                 <e p="CheckFirstBallPosition.cs" t="Include" />
+                <e p="SmoothlyMoveSystem.cs" t="Include" />
               </e>
               <e p="Common" t="Include">
                 <e p="HealthCheckSystem.cs" t="Include" />
@@ -161,6 +164,7 @@
                 <e p="HealthListenerComponent.cs" t="Include" />
                 <e p="MoveListenerComponent.cs" t="Include" />
                 <e p="PositionListenerComponent.cs" t="Include" />
+                <e p="SmoothlyMoveListenerComponent.cs" t="Include" />
               </e>
               <e p="GameEventSystems.cs" t="Include" />
               <e p="Interfaces" t="Include">
@@ -169,6 +173,7 @@
                 <e p="IHealthListener.cs" t="Include" />
                 <e p="IMoveListener.cs" t="Include" />
                 <e p="IPositionListener.cs" t="Include" />
+                <e p="ISmoothlyMoveListener.cs" t="Include" />
               </e>
               <e p="Systems" t="Include">
                 <e p="DestroyEventSystem.cs" t="Include" />
@@ -176,6 +181,7 @@
                 <e p="HealthEventSystem.cs" t="Include" />
                 <e p="MoveEventSystem.cs" t="Include" />
                 <e p="PositionEventSystem.cs" t="Include" />
+                <e p="SmoothlyMoveEventSystem.cs" t="Include" />
               </e>
             </e>
             <e p="Feature.cs" t="Include" />
@@ -207,6 +213,8 @@
                 <e p="GamePositionListenerComponent.cs" t="Include" />
                 <e p="GameResourceComponent.cs" t="Include" />
                 <e p="GameScreenColliderViewComponent.cs" t="Include" />
+                <e p="GameSmoothlyMoveComponent.cs" t="Include" />
+                <e p="GameSmoothlyMoveListenerComponent.cs" t="Include" />
                 <e p="GameTimerComponent.cs" t="Include" />
                 <e p="GameTimerEndComponent.cs" t="Include" />
                 <e p="GameTimerRunComponent.cs" t="Include" />

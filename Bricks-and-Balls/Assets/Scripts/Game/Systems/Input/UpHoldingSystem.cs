@@ -54,7 +54,6 @@ public class UpHoldingSystem : ReactiveSystem<InputEntity> {
 
 	protected override void Execute(List<InputEntity> entities) {
 		foreach (var e in entities) {
-			Debug.Log("СТАВИМ ТАЙМЕР");
 			var timerEntity = _contexts.game.CreateEntity();
 			timerEntity.AddTimer(0);
 			timerEntity.isTimerEnd = true;

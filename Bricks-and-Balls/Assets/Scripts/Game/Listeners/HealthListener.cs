@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class HealthListener: MonoBehaviour, IEventListener, IHealthListener
 {
     private GameEntity _entity;
+
+    [SerializeField]
+    Text _textComponent;
     public void RegisterListeners(IEntity entity)
     {
         _entity = (GameEntity) entity;
@@ -15,7 +18,6 @@ public class HealthListener: MonoBehaviour, IEventListener, IHealthListener
 
     public void OnHealth(GameEntity entity, int value)
     {
-        var t = GetComponentInChildren<Text>();
-        t.text = value.ToString();
+        _textComponent.text = value.ToString();
     }
 }

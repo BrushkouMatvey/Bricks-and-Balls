@@ -29,13 +29,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/RegisterViewServiceSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/ViewSystems.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Services/GameView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Services/IViewService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/PositionSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/RegisterViewServiceSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/RegisterEventServiceSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Services/Services.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/ServiceRegistrationSystems.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Screen/BorderComponent.cs" />
@@ -44,7 +37,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/View/LoadPrefabSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Block/HealthComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/View/ViewControllerComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/HealthListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/PositionListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Game/CollisionComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameCollisionComponent.cs" />
@@ -55,13 +47,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/HealthCheckSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/DestroySystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Common/DestroyComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/GameSystems.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/DestroyListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Screen/ScreenColliderInitializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Block/BombBlockComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/LevelInirializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Ball/FirstBallPositionComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Services/View.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Interfaces/View/IViewController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Ball/CheckFirstBallPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/CommonSystems.cs" />
@@ -69,17 +59,27 @@
         <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/GameComponentsLookup.cs" />
         <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameEndMoveComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Common/EndTurnMoveComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/EventSystems.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/TurnEndMoveListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/EndTurnMoveListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/EmitTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Screen/CreateBorderSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/HandlingInputSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/UpHoldingSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Timer/TimerMoveHandlingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/MoveListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/levels/Level_1.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Services/View.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Input/UpHoldingSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Ball/BallComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Components/Ball/SmoothlyMoveComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Events/Systems/SmoothlyMoveEventSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Game/Components/GameSmoothlyMoveComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sources/Generated/Events/GameEventSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/EventSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/SmoothlyMoveListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Features/GameSystems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Controllers/EmitTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Common/ReactCollisionSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Timer/TimerMoveHandlingSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Listeners/HealthListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Systems/Ball/SmoothlyMoveSystem.cs" />
       </list>
     </option>
   </component>
@@ -108,7 +108,11 @@
       <workItem from="1606749774733" duration="1421000" />
       <workItem from="1606764391429" duration="14788000" />
       <workItem from="1606816661222" duration="17624000" />
-      <workItem from="1606847200855" duration="96061000" />
+      <workItem from="1606847200855" duration="102811000" />
+      <workItem from="1607329647843" duration="12872000" />
+      <workItem from="1607348199338" duration="668000" />
+      <workItem from="1607425062751" duration="4616000" />
+      <workItem from="1607512464658" duration="825000" />
     </task>
     <servers />
   </component>
@@ -135,10 +139,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="797" y="94" width="640" height="826" key="dock-window-1/0.0.1920.1050@0.0.1920.1050" timestamp="1606765057172" />
-    <state x="638" y="124" width="644" height="801" key="find.popup" timestamp="1607086702336">
+    <state x="638" y="124" width="644" height="801" key="find.popup" timestamp="1607428344412">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="638" y="124" width="644" height="801" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1607086702336" />
+    <state x="638" y="124" width="644" height="801" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1607428344412" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1607032057019">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

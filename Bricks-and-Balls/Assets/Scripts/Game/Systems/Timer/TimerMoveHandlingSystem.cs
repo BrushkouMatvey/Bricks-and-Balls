@@ -23,7 +23,6 @@ public class TimerMoveHandlingSystem : ReactiveSystem<GameEntity> {
 
 	protected override void Execute(List<GameEntity> timerEntities)
 	{
-		Debug.Log("Отправляем мячики");
 		_inputEntities = _contexts.input.GetEntities(InputMatcher.ClickUp).ToList();
 		foreach (var e in _inputEntities) {
 			var mousePosition = e.mousePosition.value;
@@ -32,7 +31,7 @@ public class TimerMoveHandlingSystem : ReactiveSystem<GameEntity> {
 			if (ball == null) return;
 			var direction = (mousePosition - ball.position.value);
 			direction.Normalize();
-			ball.ReplaceMove(direction, 400);
+			ball.ReplaceMove(direction, 300);
 
 			foreach (var te in timerEntities)
 			{

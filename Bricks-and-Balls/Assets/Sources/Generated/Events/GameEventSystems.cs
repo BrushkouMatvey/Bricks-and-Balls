@@ -14,5 +14,6 @@ public sealed class GameEventSystems : Feature {
         Add(new HealthEventSystem(contexts)); // priority: 0
         Add(new MoveEventSystem(contexts)); // priority: 0
         Add(new PositionEventSystem(contexts)); // priority: 0
+        Add(new SmoothlyMoveEventSystem(contexts)); // priority: 0
     }
 }
